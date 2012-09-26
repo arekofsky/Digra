@@ -1,11 +1,13 @@
 Digra::Application.routes.draw do
-  resources :productos
-
-  resources :categoria
-
+  
   resources :tipo_productos
 
   resources :marcas
+
+  resources :categoria do
+    resources :productos
+  end
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
