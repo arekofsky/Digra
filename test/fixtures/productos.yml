@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fk_tipo_producto: 1
+  fk_marca: 1
+  fk_categoria: 1
+  name: MyString
+  descripcion: MyText
+  foto: MyString
+  publicar: 1
+  destacado: 1
+  precio: 9.99
+
+two:
+  fk_tipo_producto: 1
+  fk_marca: 1
+  fk_categoria: 1
+  name: MyString
+  descripcion: MyText
+  foto: MyString
+  publicar: 1
+  destacado: 1
+  precio: 9.99

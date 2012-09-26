@@ -1,0 +1,53 @@
+<%= form_for(@producto) do |f| %>
+  <% if @producto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@producto.errors.count, "error") %> prohibited this producto from being saved:</h2>
+
+      <ul>
+      <% @producto.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :fk_tipo_producto %><br />
+    <%= f.number_field :fk_tipo_producto %>
+  </div>
+  <div class="field">
+    <%= f.label :fk_marca %><br />
+    <%= f.number_field :fk_marca %>
+  </div>
+  <div class="field">
+    <%= f.label :fk_categoria %><br />
+    <%= f.number_field :fk_categoria %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :descripcion %><br />
+    <%= f.text_area :descripcion %>
+  </div>
+  <div class="field">
+    <%= f.label :foto %><br />
+    <%= f.text_field :foto %>
+  </div>
+  <div class="field">
+    <%= f.label :publicar %><br />
+    <%= f.number_field :publicar %>
+  </div>
+  <div class="field">
+    <%= f.label :destacado %><br />
+    <%= f.number_field :destacado %>
+  </div>
+  <div class="field">
+    <%= f.label :precio %><br />
+    <%= f.text_field :precio %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

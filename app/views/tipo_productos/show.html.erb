@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @tipo_producto.nombre %>
+</p>
+
+<p>
+  <b>Descripcion:</b>
+  <%= @tipo_producto.descripcion %>
+</p>
+
+<p>
+  <b>Destacado:</b>
+  <%= @tipo_producto.destacado %>
+</p>
+
+<p>
+  <b>Foto:</b>
+  <%= @tipo_producto.foto %>
+</p>
+
+
+<%= link_to 'Edit', edit_tipo_producto_path(@tipo_producto) %> |
+<%= link_to 'Back', tipo_productos_path %>

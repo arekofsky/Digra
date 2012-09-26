@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Fk tipo producto:</b>
+  <%= @producto.fk_tipo_producto %>
+</p>
+
+<p>
+  <b>Fk marca:</b>
+  <%= @producto.fk_marca %>
+</p>
+
+<p>
+  <b>Fk categoria:</b>
+  <%= @producto.fk_categoria %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @producto.name %>
+</p>
+
+<p>
+  <b>Descripcion:</b>
+  <%= @producto.descripcion %>
+</p>
+
+<p>
+  <b>Foto:</b>
+  <%= @producto.foto %>
+</p>
+
+<p>
+  <b>Publicar:</b>
+  <%= @producto.publicar %>
+</p>
+
+<p>
+  <b>Destacado:</b>
+  <%= @producto.destacado %>
+</p>
+
+<p>
+  <b>Precio:</b>
+  <%= @producto.precio %>
+</p>
+
+
+<%= link_to 'Edit', edit_producto_path(@producto) %> |
+<%= link_to 'Back', productos_path %>
