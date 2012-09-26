@@ -25,7 +25,7 @@ class ProductosController < ApplicationController
   # GET /productos/new.json
   def new
     @producto = Producto.new
-
+    @user= Categorium.find(params[:categorium_id])
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @producto }
